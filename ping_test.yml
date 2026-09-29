@@ -1,0 +1,7 @@
+---
+- name: Проверка связи с управляемыми хостами
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Выполнение встроенного пинга
+      ansible.builtin.ping:
